@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrativeproject.DipoleController">
+   <children>
+      <Button fx:id="start_button" layoutX="38.0" layoutY="250.0" mnemonicParsing="false" onAction="#start_animation" text="Start" />
+      <Button fx:id="pause_button" layoutX="34.0" layoutY="285.0" mnemonicParsing="false" onAction="#pause_animation" text="Pause" />
+      <Button fx:id="reset_button" layoutX="35.0" layoutY="352.0" mnemonicParsing="false" onAction="#reset_everything" text="Reset" />
+      <Button fx:id="done_button" layoutX="36.0" layoutY="318.0" mnemonicParsing="false" onAction="#done_main_menu" text="Done" />
+      <TextField fx:id="distance" layoutX="117.0" layoutY="272.0" promptText="Distance:" />
+      <TextField fx:id="magnitude" layoutX="117.0" layoutY="318.0" promptText="Magnitude:" />
+      <LineChart fx:id="chart_1" layoutX="321.0" layoutY="208.0" prefHeight="155.0" prefWidth="297.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="message_label" layoutX="14.0" layoutY="395.0" prefHeight="47.0" prefWidth="568.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="input_label" layoutX="389.0" layoutY="350.0" prefHeight="47.0" prefWidth="160.0" text="Distance: &#10;Magnitude:" />
+      <Button fx:id="help_button" layoutX="171.0" layoutY="352.0" mnemonicParsing="false" onAction="#help_button" text="Help" />
+      <AnchorPane fx:id="pane" layoutX="48.0" layoutY="14.0" prefHeight="200.0" prefWidth="266.0" />
+      <Label layoutX="21.0" layoutY="22.0" prefHeight="33.0" prefWidth="131.0" text="Positive Charge (+)" />
+      <Label layoutX="492.0" layoutY="30.0" prefHeight="17.0" prefWidth="131.0" text="Negative Charge (-)" />
+      <AnchorPane fx:id="pane_2" layoutX="305.0" layoutY="14.0" prefHeight="200.0" prefWidth="244.0" />
+      <Button fx:id="play_button" layoutX="239.0" layoutY="352.0" mnemonicParsing="false" onAction="#play_animation" text="Play" />
+   </children>
+</AnchorPane>
